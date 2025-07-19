@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Torrent File Comparer", "Torrent File Comparer\Torrent File Comparer.csproj", "{8CDDE3EF-6688-459D-B74D-73A2BD572241}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CDDE3EF-6688-459D-B74D-73A2BD572241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CDDE3EF-6688-459D-B74D-73A2BD572241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CDDE3EF-6688-459D-B74D-73A2BD572241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CDDE3EF-6688-459D-B74D-73A2BD572241}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
