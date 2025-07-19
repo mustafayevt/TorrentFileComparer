@@ -74,6 +74,7 @@ namespace TorrentFileComparer
             btnCompare.Enabled = false;
             btnDelete.Enabled = false;
             btnSelectAll.Enabled = false;
+            btnSelectAdditionals.Enabled = false;
             btnDeselectAll.Enabled = false;
             progressBar.Visible = true;
             progressBar.Maximum = loadedTorrent.Files.Count;
@@ -88,6 +89,7 @@ namespace TorrentFileComparer
                 lblStatus.Text = "Comparison completed!";
                 btnDelete.Enabled = true;
                 btnSelectAll.Enabled = true;
+                btnSelectAdditionals.Enabled = true;
                 btnDeselectAll.Enabled = true;
             }
             catch (Exception ex)
@@ -326,6 +328,15 @@ namespace TorrentFileComparer
             public long TorrentSize { get; set; }
             public long LocalSize { get; set; }
             public string LocalPath { get; set; }
+        }
+
+        private void btnSelectAdditionals_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dgvResults.Rows)
+            {
+                if(row.Cells[2].Value.ToString() == "Additional File")
+                    row.Cells[0].Value = true;
+            }
         }
     }
 }
